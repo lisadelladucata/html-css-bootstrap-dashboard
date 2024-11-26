@@ -10,21 +10,22 @@
 </head>
 <body>
     <header>
-<!-- header mobile -->
+    <!-- header mobile -->
         <nav class="navbar bg-dark d-lg-none  ">
+          <div class="container-fluid d-flex justify-content-between">
+            <a class="navbar-brand" href="#">
+              <img src="./img/duck.png" alt="duck" width="50" height="50">
+            </a>
+          <nav class="navbar navbar-dark bg-dark">
             <div class="container-fluid d-flex justify-content-between">
-                <a class="navbar-brand" href="#">
-                    <img src="./img/duck.png" alt="duck" width="50" height="50">
-                </a>
-            <nav class="navbar navbar-dark bg-dark">
-                <div class="container-fluid d-flex justify-content-between">
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                  </button>
-                </div>
-            </nav>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+          </nav>
+          </div>
         </nav>
-<!-- responsive header  -->
+        <!-- responsive header  -->
         <nav class="navbar bg-dark navbar-expand-lg d-none d-lg-flex  ">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">
@@ -52,12 +53,14 @@
             </div>
           </nav>
     </header>
-<!-- /header  -->    
+    <!-- /header  -->    
     <main>
         <section>
             <div class="d-flex justify-content-between p-3">
                 <h1>Catalogo Libri</h1>
-                <button type="button" class="btn btn-primary">Aggiungi Libro</button>
+                <form action="new-book.html">
+                  <button type="submit" class="btn btn-primary">Aggiungi Libro</button>
+                </form>
             </div>
         </section>
         <section>
